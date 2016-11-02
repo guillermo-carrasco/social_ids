@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import sys
 
 import click
@@ -14,9 +16,12 @@ networks = {
 @click.argument('network', type=click.Choice(networks.keys()))
 @click.argument('handler', type=click.STRING)
 def get_id(network, handler):
-    _id = networks[network].get_id(handler)
-    if _id is not None:
-        print('ID for {} handler "{}" is: {}'.format(network, handler, _id))
+    network_id = networks[network].get_id(handler)
+    if network_id is not None:
+        print('ID for {network} handler "{handler}" is: {network_id}'.format(network=network,
+                                                                             handler=handler,
+                                                                             network_id=network_id))
     else:
-        print('Couldn\'t fetch {} ID for handler {}... is it the correct handler? Sorry! ¯\_(ツ)_/¯'.format(network, handler))
+        print('Couldn\'t fetch {network} ID for handler {handler}... is it the correct handler? Sorry!'.format(network=network,
+                                                                                                               handler=handler))
         sys.exit(1)

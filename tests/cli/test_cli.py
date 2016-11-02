@@ -26,7 +26,7 @@ def test_facebook():
     # Use incorrect id should fail
     result = runner.invoke(get_ids.get_id, ['facebook', str(uuid.uuid4())])
     assert result.exit_code == 1
-    assert '¯\_(ツ)_/¯' in result.output
+    assert 'Sorry' in result.output
 
 
 def test_twitter():
@@ -38,7 +38,7 @@ def test_twitter():
     # Use incorrect id should fail
     result = runner.invoke(get_ids.get_id, ['twitter', str(uuid.uuid4())])
     assert result.exit_code == 1
-    assert '¯\_(ツ)_/¯' in result.output
+    assert 'Sorry' in result.output
 
 
 def test_instagram():
@@ -50,4 +50,4 @@ def test_instagram():
     # Use incorrect id should fail
     result = runner.invoke(get_ids.get_id, ['instagram', str(uuid.uuid4())])
     assert result.exit_code == 1
-    assert '¯\_(ツ)_/¯' in result.output
+    assert 'Sorry' in result.output
