@@ -1,6 +1,6 @@
 # Social IDs
 
-[![Build Status](https://travis-ci.org/guillermo-carrasco/social_ids.svg?branch=master)](https://travis-ci.org/guillermo-carrasco/social_ids)
+[![Build Status](https://travis-ci.org/guillermo-carrasco/social_ids.svg?branch=master)](https://travis-ci.org/guillermo-carrasco/social_ids)[![PyPI version](https://badge.fury.io/py/social_ids.svg)](https://badge.fury.io/py/social_ids)
 
 ## What?
 Get user ids from social network handlers
