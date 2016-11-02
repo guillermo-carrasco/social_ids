@@ -15,6 +15,8 @@ within the page source.
 
 ## How?
 
+`pip install social_ids`
+
 #### As CLI tool
 Quite simple:
 
