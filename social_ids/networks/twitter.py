@@ -5,7 +5,7 @@ BASE_URL = 'https://www.twitter.com/{}'
 PATTERN = 'href\=\"\/{}" data\-user\-id\=\"(\d+?)\"\>'
 
 def get_id(handler):
-    """Returns Facebook user/page ID for the given handler
+    """Returns Twitter user ID for the given handler
     """
     req = requests.get(BASE_URL.format(handler))
 
