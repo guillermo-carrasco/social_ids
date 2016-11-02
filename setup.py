@@ -10,7 +10,10 @@ setup(name='social_ids',
       include_package_data=True,
       keywords=['Social Media', 'Facebook', 'Twitter', 'Instagram'],
       zip_safe=True,
-      install_requires=[],
+      install_requires=[
+        'click',
+        'requests'
+      ],
       entry_points={
         'console_scripts': ['socialid = social_ids.cli.get_ids:get_id']
     },
