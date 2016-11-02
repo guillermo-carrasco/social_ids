@@ -12,3 +12,6 @@ install:
 
 script:
   - py.test --verbose tests/*
+
+notifications:
+    email: false
