@@ -12,8 +12,8 @@ introduce a dependency with that network's SDK or require any kind of token.
 To add your own network:
 
 1. Create `social_ids/networks/<new_network>.py` and implement the method `get_id(handle)`
-2. Add the new network to the dictionary `NETWORKS` in `social_ids/cli/get_ids.py`. Key must be the
-network name in lowercase and value must be that network's implementation of the `get_id(handle)` method
+2. Add the new network to the dictionary `networks` in `social_ids/cli/get_ids.py`. Key must be the
+network name in lowercase and value must be that network's module implementation
 3. Write tests for the new network and the CLI
 4. Increase the minor version number in `setup.py` . That is, for example from 1.0.1 to 1.1.0
 

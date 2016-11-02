@@ -10,6 +10,6 @@ def get_id(handler):
     req = requests.get(BASE_URL.format(handler=handler))
 
     try:
-        return re.search(PATTERN.format(handler=handler), req.text).group(1)
+        return re.search(PATTERN.format(handler=handler), req.text, re.IGNORECASE).group(1)
     except AttributeError:
         return None

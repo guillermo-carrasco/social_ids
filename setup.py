@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='social_ids',
-      version='1.0',
+      version='1.0.1',
       description="Get user ids from social network handlers",
       author='Guillermo Carrasco',
       author_email='guillermo@getfanzone.com',
