@@ -9,7 +9,7 @@ Get user ids from social network handlers
 If you're a developer and work with social networks you'll know that getting the user ID is not straightforward. Usually
 you have to use some sort of SDK and configure access tokens to get that information.
 
-Inspired in [ids_please][ids_please] package for JavaScript I created this Python tool so that you can
+Inspired in [ids_please][ids_please] package for Ruby I created this Python tool so that you can
 use it as a CLI tool or import it in your code. No need for tokens or SDKs, it does search for the ID
 within the page source.
 
