@@ -47,5 +47,9 @@ Right now social_ids works with:
 * Twitter
 * Instagram
 
+## Notes
+Recently [2017-01-13] discovered that, at least for Twitter, the ID won't appear in the source code
+until the first post has been created. So a Twitter account without any post won't be found by social_ids.
+
 
 [ids_please]: https://github.com/gazay/ids_please
